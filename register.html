@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Webpage Title -->
+    <title>BlockVerify</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link href="./css/aos.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/loginStyle.css" >
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/logo.png" />
+  </head>
+  <body>
+    <!--NavBar Start-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets\images\logo.png" alt="Your Logo" class="home_logo" />
+          <span class="home_text" style="font-size: 1.25rem;">Block</span>Verify
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Login </a>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="register.html"
+                >Register</a>
+            </li>
+            
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="home">
+      <div class="container2" id="container2">
+        <div class="form-container2 log-in-container2">
+            <form action="process.php" method="post">
+                <h3>Register</h3>
+                  <div class="form-group">
+                      <input type="text" name="username" id="inputEmail4" class="form-control" autocapitalize="none" placeholder="Username" required>
+                      <input type="password" name="password" id="inputPassword4" class="form-control" autocapitalize="none" placeholder="Password" required>
+                      <input type="password" class="form-control" name="confirm_password" id="inputConfirmPassword" placeholder="Re-Enter Password" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary" name="register" id="buttonStyle">Register</button>
+              </form>
+          </div>
+          <div class="overlay-container2">
+            <div class="overlay">
+              <div class="overlay-panel overlay-right">
+                <h1>BlockVerify</h1>
+                <p >Your Trusted Blockchain-Powered Certificate Verification Platform
+                </p>
+            </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/purecounter.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/script.js"></script>
+
+    <script defer>
+  $(".loader-wraper").fadeOut("slow");
+    </script>
+
+
+  </body>
+</html>
