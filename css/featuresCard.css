@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald|Roboto|Slabo+27px);
+ @import 'bourbon';
+ body {
+    background: linear-gradient(to right,#62a2f5, #e87da3);
+}
+ h1 {
+	 font-size: 50px;
+	 margin-top: 30px;
+     font: bolder;
+	 font-family: 'Oswald', sans-serif;
+	 text-align: center;
+}
+ .blog-wrapper {
+	 padding: 15px;
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: center;
+	 flex-wrap: wrap;
+}
+ .blog-wrapper .blog-card {
+	 max-width: 270px;
+	 margin: 15px;
+	 background: #fff;
+	 border: 2px solid #cb6074;
+	 text-align: center;
+	 cursor: pointer;
+}
+ .blog-wrapper .blog-card:hover {
+	 box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .1);
+}
+ .blog-wrapper .blog-card:hover .card-img img {
+	 opacity: 0.8;
+}
+ .blog-wrapper .blog-card .card-img {
+	 position: relative;
+	 text-align: center;
+	 background: #cb6074;
+}
+ .blog-wrapper .blog-card .card-img img {
+	 max-height: 180px;
+	 width: 100%;
+	 border-bottom: 4px solid #cb6074;
+}
+ .blog-wrapper .blog-card .card-img:before {
+	 content: '';
+	 position: absolute;
+	 bottom: -8px;
+	 left: 50%;
+	 margin-left: -10px;
+	 width: 0;
+	 height: 0;
+	 border-top: solid 10px #cb6074;
+	 border-left: solid 10px transparent;
+	 border-right: solid 10px transparent;
+}
+ .blog-wrapper .blog-card .card-img h1 {
+	 position: absolute;
+	 margin: 0;
+	 font-size: 42px;
+	 bottom: 15px;
+	 width: 100%;
+	 color: #fff;
+	 font-family: 'Slabo 27px', serif;
+}
+ .blog-wrapper .blog-card .card-details {
+	 margin-top: 30px;
+	 font-family: 'Roboto', sans-serif;
+	 color: #3c3c3c;
+}
+ .blog-wrapper .blog-card .card-details span {
+	 padding: 0 30px;
+}
+ .blog-wrapper .blog-card .card-details span i {
+	 margin-right: 5px;
+}
+ .blog-wrapper .blog-card .card-text {
+	 padding: 30px 15px;
+	 font-family: 'Roboto', sans-serif;
+	 line-height: 22px;
+}
+ .blog-wrapper .blog-card .read-more {
+	 display: inline-block;
+	 width: auto;
+	 text-align: center;
+	 text-transform: uppercase;
+	 background: #cb6074;
+	 color: #fff;
+	 padding: 15px;
+	 margin-bottom: 30px;
+	 font-family: 'Oswald', sans-serif;
+}
+ .blog-wrapper .blog-card .read-more:hover {
+	 background: #943143;
+}
+ 

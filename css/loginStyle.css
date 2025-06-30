@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Roboto;
+    /* overflow-x: hidden; */
+}
+
+body {
+    position: relative;
+    background: linear-gradient(to right,var(--second-color), var(--main-color));
+    overflow-x: hidden;
+  }
+  .navbar-dark {
+    background: var(--nav-background) !important;
+  }
+  
+  /* ------------------------------------------------------------ */
+  
+  /* Home Page */
+  .home {
+    background-image: url(../assets/images/home5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: calc(100vh - 71px);
+    position: relative;
+  }
+  .home .text-light {
+    z-index: 2;
+  }
+  
+.home.container {
+    z-index: 100000000;
+  }
+  
+  .logo {
+    background: var(--background-color);
+  }
+  .home h1 {
+    font-size: 3.4rem;
+  }
+  .home_text {
+    color: var(--main-color);
+  }
+  .home .para {
+    font-size: 1.2rem;
+    line-height: 2;
+    color: var(--white);
+  }
+  .home-btn {
+    color: #004066;
+    background-color: var(--second-color);
+  }
+:root {
+    --main-color: #7ecbad;
+    --second-color: #abbbc1;
+    --box-shadow: 0 0 5px rgb(33, 3, 3);
+    --border-color: 1px solid #c3c3c361;
+    --dark: #1f2022;
+    --light: rgb(157, 157, 157);
+    --white: rgba(255, 255, 255, 0.925);
+    --border-radius: 10px;
+    --inputs-background: #121212;
+    --boxes-color: #252024 !important;
+    --nav-background: #1f2022;
+    --team-box-color: #151d20;
+  }
+  .navbar-brand .home_logo {
+    width: 30px;
+    height: 30px;
+  }
+
+body {
+    background-image: url("/assets/images/home5.jpg");
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-dark {
+    background: var(--nav-background) !important;
+}
+.home_logo {
+    width: 50px; 
+    height: 50px;
+}
+
+
+.container2 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    top: 100px;
+    left: 350px;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+form {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+
+}
+
+.form-container2 {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.log-in-container2 {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+
+#login {
+    text-align: center;
+}
+
+#username,
+#password {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+span {
+    font-size: 12px;
+}
+
+#buttonStyle {
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+h3 {
+    font-weight: bold;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bg-custom {
+    background-color: #57907f;
+}
+
+
+.overlay-container2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+}
+
+.overlay {
+    background: #FF416C;
+    background: -webkit-linear-gradient(to right, #FF4B2B, #fa446f);
+    background: linear-gradient(to right, #FF4B2B, #fa446f);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    color: #FFFFFF;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+}
+
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+}
+
+
+.overlay-right {
+    right: 0;
+}
+
+input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
