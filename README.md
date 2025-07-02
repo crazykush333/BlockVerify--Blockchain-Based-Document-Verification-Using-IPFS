@@ -67,8 +67,11 @@ Before you dive in, make sure you’ve got the essentials set up:
 Get the project up and running with these quick steps:
 
 📂 **Clone the Repository**  
-  - Grab the source code into your local machine:  
-  ``https://github.com/crazykush333/BlockVerify--Blockchain-Based-Document-Verification-Using-IPFS.git``
+  - Grab the source code into your local machine:
+    ```sh
+         git clone https://github.com/crazykush333/BlockVerify--Blockchain-Based-Document-Verification-Using-IPFS.git
+    ```
+  
 
  📦 Install Dependencies and make sure all required Node.js packages are ready
  
