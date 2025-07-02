@@ -1,5 +1,38 @@
-# BlockVerify--Blockchain-Based-Document-Verification-Using-IPFS
-A decentralized web-based solution for tamper-proof document storage and verification. This application leverages smart contracts deployed on the Polygon blockchain and integrates with IPFS (InterPlanetary File System) for decentralized file storage.
+## 🔐 Project Overview: Blockchain-Based Document Verification Using IPFS
+
+A decentralized, trustless platform for **secure document verification** using state-of-the-art **blockchain** and **IPFS** technologies. This solution ensures documents are:
+
+- 💾 **Persistently Stored** via IPFS (InterPlanetary File System)  
+- 🔗 **Tamper-Proof** with immutable hashes recorded on the **Polygon blockchain**  
+- 🛡️ **Verifiable** without intermediaries — anyone can confirm authenticity using a document's hash  
+
+---
+
+## ⚙️ Tech Stack & Architecture
+
+This project blends modern Web3 protocols with decentralized infrastructure to build a robust, scalable system:
+
+| 🔧 Technology        | ⚡ Role in the System                                                 |
+|---------------------|----------------------------------------------------------------------|
+| `Solidity`          | Smart contract logic for registering/verifying document hashes       |
+| `Polygon (MATIC)`   | Fast, low-cost Layer 2 blockchain hosting the contract                |
+| `IPFS`              | Distributed storage for the actual documents                         |
+| `MetaMask`          | Ethereum-compatible wallet to connect users with the dApp             |
+| `Web3.js`           | Facilitates interaction between the frontend and the blockchain       |
+| `JavaScript & HTML` | Frontend logic and structure                                          |
+| `Live Server`       | Lightweight environment to preview the application locally            |
+
+---
+
+## 🌐 How It Works — At a Glance
+
+1. 📥 A document is uploaded by an **authorized Exporter**
+2. 🔐 It’s pinned to **IPFS**, generating a unique content-addressable hash
+3. 🧾 The hash is stored on-chain via a smart contract, ensuring immutability
+4. 🔍 Anyone can verify the document by comparing the retrieved IPFS hash with the on-chain record
+
+> ✨ This hybrid system guarantees **data integrity**, **transparency**, and **cryptographic assurance** — redefining document verification for the decentralized age.
+
 
 ## 🚀 Highlights
 
@@ -112,34 +145,62 @@ A huge shoutout to the tools and communities that made this project possible:
 
 ## 🖼️ Sample Output
 
-### 🔐 1. Login
-User securely connects their MetaMask wallet to the dApp  
-![Login](./assets/output/login.png)
+### 🔐 1. Login — Connect to Your Wallet
+The first step to interacting with the dApp is secure authentication via MetaMask. Users are prompted to connect their wallet, which links them to the blockchain environment.
+> No email, no password — just Web3-style seamless identity.
+
+![Login](./assets/login.png)
 
 ---
 
-### 🏠 2. Homepage
-View of the application's landing dashboard  
-![Homepage 1](https://github.com/crazykush333/BlockVerify--Blockchain-Based-Document-Verification-Using-IPFS/assets/128953212/6b450e79-39e0-4d38-9933-1b190be948f9)  
-![Homepage 2](https://github.com/crazykush333/BlockVerify--Blockchain-Based-Document-Verification-Using-IPFS/assets/128953212/2c848495-628f-47b3-8d23-84158f07198c)
+### 🏠 2. Homepage — Intuitive Dashboard
+Once logged in, users land on a clean dashboard that serves as the control center.  
+From here, users can view their role (Admin/Exporter), navigate actions like uploading or verifying documents, and manage blockchain interactions.
+
+![Homepage 1](./assets/homepage1.png)  
+![Homepage 2](./assets/homepage2.png)
 
 ---
 
-### 👩‍💼 3. Admin - Add Exporter
-Admin dashboard to assign exporters who can upload documents  
-![Admin Exporter](https://github.com/NimishKushwaha/BlockVerify---An-IPFS-Based-Document-Verification-using-Blockchain/assets/128953212/c3bef3ac-0215-432a-82b2-9306b2f63146)
+### 🧑‍💼 3. Admin Panel — Add Trusted Exporters
+Only Admins can register Exporters (who are allowed to upload documents). This step ensures that document uploads are only handled by verified entities.  
+
+> The Admin inputs the Exporter's wallet address, securing a trust-based upload system.
+
+![Add Exporter](./assets/admin-exporter.png)
 
 ---
 
-### 📤 4. Upload a Document
-Exporter uploads a document → it gets hashed & pinned to IPFS  
-![Upload Step 1](https://github.com/NimishKushwaha/BlockVerify---An-IPFS-Based-Document-Verification-using-Blockchain/assets/128953212/13b63fe2-b681-4d4f-a5fa-aa9910a3f5ea)  
-![Upload Step 2](https://github.com/NimishKushwaha/BlockVerify---An-IPFS-Based-Document-Verification-using-Blockchain/assets/128953212/3dc0e9de-2a09-4c57-a8c5-bf0758574e3b)
+### 📤 4. Upload Document — Secure & Decentralized Storage
+Exporters can choose a file (PDF, image, certificate, etc.) to upload.  
+Once selected:
+- The file is pinned to IPFS (ensuring decentralized storage)
+- Its content hash is computed
+- The hash is immutably stored on the blockchain via smart contract
+
+> Tamper-proof, timestamped, and traceable — all in one step.
+
+![Upload 1](./assets/upload1.png)  
+![Upload 2](./assets/upload2.png)
 
 ---
 
-### 🔍 5. Verify a Document
-Users can check authenticity by comparing hashes  
-![Verify Document](https://github.com/NimishKushwaha/BlockVerify---An-IPFS-Based-Document-Verification-using-Blockchain/assets/128953212/5710d5c1-629c-41e5-af57-62c8e970b7ba)
+### 🔍 5. Verify Document — One Hash, Total Confidence
+Anyone with the document's hash can check its authenticity:
+- The dApp pulls the document from IPFS
+- Computes its hash
+- Compares it with the blockchain-registered hash
+
+> ✅ If it matches — authentic  
+> ❌ If not — possibly tampered or invalid  
+
+![Verify Document](./assets/verify.png)
+
+## 📬 Contact
+
+👤 **Maintainer**: Ayush Kushwaha  
+✉️ **Email**: [ayushkushwaha21029@gmail.com](mailto:ayushkushwaha21029@gmail.com)  
+📍 Built with ❤️ to make document authentication simpler, safer, and smarter.
+
 
   
