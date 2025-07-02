@@ -120,8 +120,8 @@ User securely connects their MetaMask wallet to the dApp
 
 ### 🏠 2. Homepage
 View of the application's landing dashboard  
-![Homepage 1](https://github.com/NimishKushwaha/BlockVerify---An-IPFS-Based-Document-Verification-using-Blockchain/assets/128953212/6b450e79-39e0-4d38-9933-1b190be948f9)  
-![Homepage 2](https://github.com/NimishKushwaha/BlockVerify---An-IPFS-Based-Document-Verification-using-Blockchain/assets/128953212/2c848495-628f-47b3-8d23-84158f07198c)
+![Homepage 1](https://github.com/crazykush333/BlockVerify--Blockchain-Based-Document-Verification-Using-IPFS/assets/128953212/6b450e79-39e0-4d38-9933-1b190be948f9)  
+![Homepage 2](https://github.com/crazykush333/BlockVerify--Blockchain-Based-Document-Verification-Using-IPFS/assets/128953212/2c848495-628f-47b3-8d23-84158f07198c)
 
 ---
 
