@@ -149,7 +149,7 @@ A huge shoutout to the tools and communities that made this project possible:
 The first step to interacting with the dApp is secure authentication via MetaMask. Users are prompted to connect their wallet, which links them to the blockchain environment.
 > No email, no password — just Web3-style seamless identity.
 
-![Login](./assets/login.png)
+![Login](assets/output/login.png)
 
 ---
 
