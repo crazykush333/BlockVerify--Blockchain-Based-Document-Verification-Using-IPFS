@@ -157,8 +157,8 @@ The first step to interacting with the dApp is secure authentication via MetaMas
 Once logged in, users land on a clean dashboard that serves as the control center.  
 From here, users can view their role (Admin/Exporter), navigate actions like uploading or verifying documents, and manage blockchain interactions.
 
-![Homepage 1](assets/homepage1.png)  
-![Homepage 2](assets/homepage2.png)
+![Homepage 1](assets/output/homepage1.png)  
+![Homepage 2](assets/output/homepage2.png)
 
 ---
 
@@ -167,7 +167,7 @@ Only Admins can register Exporters (who are allowed to upload documents). This s
 
 > The Admin inputs the Exporter's wallet address, securing a trust-based upload system.
 
-![Add Exporter](assets/admin-exporter.png)
+![Add Exporter](assets/output/admin-exporter.png)
 
 ---
 
@@ -180,8 +180,8 @@ Once selected:
 
 > Tamper-proof, timestamped, and traceable — all in one step.
 
-![Upload 1](assets/upload1.png)  
-![Upload 2](assets/upload2.png)
+![Upload 1](assets/output/upload1.png)  
+![Upload 2](assets/output/upload2.png)
 
 ---
 
@@ -194,7 +194,7 @@ Anyone with the document's hash can check its authenticity:
 > ✅ If it matches — authentic  
 > ❌ If not — possibly tampered or invalid  
 
-![Verify Document](assets/verify.png)
+![Verify Document](assets/output/verify.png)
 
 ## 📬 Contact
 
