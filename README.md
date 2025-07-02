@@ -1,7 +1,7 @@
 # BlockVerify--Blockchain-Based-Document-Verification-Using-IPFS
 A decentralized web-based solution for tamper-proof document storage and verification. This application leverages smart contracts deployed on the Polygon blockchain and integrates with IPFS (InterPlanetary File System) for decentralized file storage.
 
-🚀 Highlights
+## 🚀 Highlights
 
 🔐 Integrity-First: Hashes stored on-chain ensure document immutability
 
