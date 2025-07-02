@@ -167,7 +167,7 @@ Only Admins can register Exporters (who are allowed to upload documents). This s
 
 > The Admin inputs the Exporter's wallet address, securing a trust-based upload system.
 
-![Add Exporter](assets/output/admin-exporter.png)
+![Add Exporter](assets/output/admin exporter.png)
 
 ---
 
