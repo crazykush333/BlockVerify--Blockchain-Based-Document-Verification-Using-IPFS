@@ -194,7 +194,7 @@ Anyone with the document's hash can check its authenticity:
 > ✅ If it matches — authentic  
 > ❌ If not — possibly tampered or invalid  
 
-![Verify Document](assets/output/verify.png)
+![Verify Document](assets/output/admin_exporter.png)
 
 ## 📬 Contact
 
