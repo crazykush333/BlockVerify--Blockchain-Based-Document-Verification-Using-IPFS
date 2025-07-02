@@ -110,5 +110,36 @@ A huge shoutout to the tools and communities that made this project possible:
 > 💡 Special thanks to the open-source community for their inspiration and constant innovation.
 
 
+## 🖼️ Sample Output
+
+### 🔐 1. Login
+User securely connects their MetaMask wallet to the dApp  
+![Login](./assets/output/login.png)
+
+---
+
+### 🏠 2. Homepage
+View of the application's landing dashboard  
+![Homepage 1](https://github.com/NimishKushwaha/BlockVerify---An-IPFS-Based-Document-Verification-using-Blockchain/assets/128953212/6b450e79-39e0-4d38-9933-1b190be948f9)  
+![Homepage 2](https://github.com/NimishKushwaha/BlockVerify---An-IPFS-Based-Document-Verification-using-Blockchain/assets/128953212/2c848495-628f-47b3-8d23-84158f07198c)
+
+---
+
+### 👩‍💼 3. Admin - Add Exporter
+Admin dashboard to assign exporters who can upload documents  
+![Admin Exporter](https://github.com/NimishKushwaha/BlockVerify---An-IPFS-Based-Document-Verification-using-Blockchain/assets/128953212/c3bef3ac-0215-432a-82b2-9306b2f63146)
+
+---
+
+### 📤 4. Upload a Document
+Exporter uploads a document → it gets hashed & pinned to IPFS  
+![Upload Step 1](https://github.com/NimishKushwaha/BlockVerify---An-IPFS-Based-Document-Verification-using-Blockchain/assets/128953212/13b63fe2-b681-4d4f-a5fa-aa9910a3f5ea)  
+![Upload Step 2](https://github.com/NimishKushwaha/BlockVerify---An-IPFS-Based-Document-Verification-using-Blockchain/assets/128953212/3dc0e9de-2a09-4c57-a8c5-bf0758574e3b)
+
+---
+
+### 🔍 5. Verify a Document
+Users can check authenticity by comparing hashes  
+![Verify Document](https://github.com/NimishKushwaha/BlockVerify---An-IPFS-Based-Document-Verification-using-Blockchain/assets/128953212/5710d5c1-629c-41e5-af57-62c8e970b7ba)
 
   
