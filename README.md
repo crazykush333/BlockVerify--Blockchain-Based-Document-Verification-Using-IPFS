@@ -18,14 +18,34 @@ A decentralized web-based solution for tamper-proof document storage and verific
 Before you dive in, make sure you’ve got the essentials set up:
 
 🧩 **Node.js & npm**  
-  Core environment for running and building the project.  
+- Core environment for running and building the project.  
 
 🦊 **MetaMask Browser Extension**  
-  For interacting with the blockchain directly from your browser.    
+- For interacting with the blockchain directly from your browser.    
 
 ⛽ **Polygon Testnet Access**  
-  You’ll need some free MATIC tokens for testing.  
+- You’ll need some free MATIC tokens for testing.  
  
 🌀 **IPFS Client** *(Optional)*  
-  Decentralized file storage tool — skip for now if IPFS isn't available.  
+- Decentralized file storage tool — skip for now if IPFS isn't available.  
+
+## 🔧 Installation
+
+Get the project up and running with these quick steps:
+
+- 📂 **Clone the Repository**  
+  Grab the source code into your local machine:  
+  ``https://github.com/DevAloshe/BlockChain-Based-Document-Verfication-With-IPFS.git``
+
+- 📦 Install Dependencies and make sure all required Node.js packages are ready
+- 🦊 Set Up MetaMask
+   - Create a MetaMask wallet (or use an existing one)
+   - Add the Polygon (MATIC) Testnet to your MetaMask
+   - 💰 Load test MATIC tokens → Use Polygon Faucet
+
+
+
+
+
+
   
