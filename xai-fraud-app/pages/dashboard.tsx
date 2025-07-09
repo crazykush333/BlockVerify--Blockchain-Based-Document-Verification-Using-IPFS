@@ -3,6 +3,8 @@ import { useSession, signOut } from 'next-auth/react';
 import { useRouter } from 'next/router';
 import axios from 'axios';
 import PdfExportButton from '../components/PdfExportButton';
+import Spinner from '../components/Spinner';
+import ErrorMessage from '../components/ErrorMessage';
 import {
   PieChart,
   Pie,
@@ -30,6 +32,7 @@ export default function Dashboard() {
   const router = useRouter();
   const [rows, setRows] = useState<TxRow[]>([]);
   const [loading, setLoading] = useState(true);
+  const [errorMsg, setErrorMsg] = useState('');
 
   useEffect(() => {
     if (status === 'unauthenticated') router.push('/');
@@ -44,8 +47,9 @@ export default function Dashboard() {
     try {
       const res = await axios.get('/api/demo-data'); // placeholder
       setRows(res.data);
-    } catch (e) {
+    } catch (e: any) {
       console.error(e);
+      setErrorMsg(e.message || 'Failed to load transactions');
     } finally {
       setLoading(false);
     }
@@ -79,8 +83,9 @@ export default function Dashboard() {
         </div>
       </header>
 
-      {loading && <p>Loading...</p>}
-      {!loading && (
+      {errorMsg && <ErrorMessage message={errorMsg} />}
+      {loading && <Spinner />}
+      {!loading && !errorMsg && (
         <>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             <div className="bg-white p-4 rounded-lg shadow">

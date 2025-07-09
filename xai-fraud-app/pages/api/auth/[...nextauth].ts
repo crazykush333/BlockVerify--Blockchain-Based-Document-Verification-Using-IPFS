@@ -23,6 +23,24 @@ export const authOptions: NextAuthOptions = {
   session: {
     strategy: 'jwt',
   },
+  jwt: {
+    secret: process.env.NEXTAUTH_SECRET,
+  },
+  callbacks: {
+    async jwt({ token, user }) {
+      if (user) {
+        token.id = user.id;
+      }
+      return token;
+    },
+    async session({ session, token }) {
+      if (token?.id) {
+        // @ts-ignore
+        session.user.id = token.id;
+      }
+      return session;
+    },
+  },
   pages: {
     signIn: '/',
   },

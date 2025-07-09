@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/router';
+import Spinner from '../components/Spinner';
+import ErrorMessage from '../components/ErrorMessage';
 
 export default function RegisterPage() {
   const router = useRouter();
@@ -10,15 +12,18 @@ export default function RegisterPage() {
   const [error, setError] = useState('');
   const [otpSent, setOtpSent] = useState(false);
   const [otp, setOtp] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setLoading(true);
     try {
       if (!otpSent) {
         await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/otp/send`, null, {
           params: { phone },
         });
         setOtpSent(true);
+        setLoading(false);
         return;
       }
 
@@ -32,6 +37,8 @@ export default function RegisterPage() {
       router.push('/');
     } catch (err: any) {
       setError(err.response?.data?.detail || err.response?.data?.message || 'Error');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -76,13 +83,14 @@ export default function RegisterPage() {
               />
             )}
           </div>
-          {error && <p className="text-red-500 text-sm">{error}</p>}
+          {error && <ErrorMessage message={error} />}
           <button
             type="submit"
             className="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-700 hover:bg-indigo-800"
           >
             {otpSent ? 'Verify & Register' : 'Send OTP'}
           </button>
+          {loading && <Spinner />}
         </form>
       </div>
     </div>

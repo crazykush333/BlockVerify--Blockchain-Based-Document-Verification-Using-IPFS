@@ -6,6 +6,7 @@ from sklearn.linear_model import LogisticRegression
 from pathlib import Path
 
 MODEL_PATH = "model/model.pkl"
+EXPLAINER_PATH = "model/explainer.pkl"
 EXPLAINER_GLOBAL = None
 MODEL = None
 
@@ -27,8 +28,16 @@ def load_model():
         Path(MODEL_PATH).parent.mkdir(parents=True, exist_ok=True)
         joblib.dump(MODEL, MODEL_PATH)
 
-    background_data = np.random.rand(100, MODEL.n_features_in_)
-    EXPLAINER_GLOBAL = shap.Explainer(MODEL, background_data)
+    # Attempt to load pre-trained explainer
+    if Path(EXPLAINER_PATH).exists():
+        try:
+            EXPLAINER_GLOBAL = joblib.load(EXPLAINER_PATH)
+        except Exception:
+            pass
+
+    if EXPLAINER_GLOBAL is None:
+        background_data = np.random.rand(100, MODEL.n_features_in_)
+        EXPLAINER_GLOBAL = shap.Explainer(MODEL, background_data)
 
 
 def predict(features: np.ndarray):
