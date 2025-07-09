@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSession, signOut } from 'next-auth/react';
 import { useRouter } from 'next/router';
 import axios from 'axios';
+import PdfExportButton from '../components/PdfExportButton';
 import {
   PieChart,
   Pie,
@@ -64,15 +65,18 @@ export default function Dashboard() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
+    <div className="min-h-screen bg-gray-100 p-6" id="dashboard-root">
       <header className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-bold">Dashboard</h1>
-        <button
+        <div className="flex gap-4">
+          <PdfExportButton selector="#dashboard-root" />
+          <button
           onClick={() => signOut()}
           className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700"
-        >
-          Logout
-        </button>
+          >
+            Logout
+          </button>
+        </div>
       </header>
 
       {loading && <p>Loading...</p>}

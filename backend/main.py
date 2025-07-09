@@ -1,12 +1,22 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from schemas import Transaction, PredictionResponse
 import numpy as np
 from model_utils import predict, explain_shap, explain_lime
 from typing import List
 from web3 import Web3
 import os
+from otp_utils import generate_and_send_otp, verify_otp
 
 app = FastAPI(title="XAI Fraud Detection API", version="0.1.0")
+
+# CORS to allow frontend origin
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Adjust in production
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Blockchain setup (local anvil or remote RPC)
 CHAIN_RPC_URL = os.getenv("CHAIN_RPC_URL", "http://localhost:8545")
@@ -58,3 +68,22 @@ async def predict_fraud(tx: Transaction):
 @app.get("/health")
 async def health():
     return {"status": "ok"}
+
+
+# ---------------- OTP FLOW ----------------
+
+
+@app.post("/otp/send")
+async def send_otp(phone: str):
+    try:
+        generate_and_send_otp(phone)
+        return {"status": "sent"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/otp/verify")
+async def verify_otp_endpoint(phone: str, code: str):
+    if verify_otp(phone, code):
+        return {"status": "verified"}
+    raise HTTPException(status_code=400, detail="Invalid or expired code")

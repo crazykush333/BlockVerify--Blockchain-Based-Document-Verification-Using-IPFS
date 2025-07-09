@@ -20,12 +20,17 @@
     "recharts": "2.6.2",
     "zustand": "4.5.2",
     "next-auth": "4.24.4",
-    "ethers": "6.9.7"
+    "ethers": "6.9.7",
+    "jspdf": "2.5.1",
+    "html2canvas": "1.4.1"
   },
   "devDependencies": {
     "@types/node": "20.11.30",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
-    "typescript": "5.4.2"
+    "typescript": "5.4.2",
+    "@types/html2canvas": "0.0.52",
+    "@types/jspdf": "2.0.2",
+    "@types/axios": "0.14.0"
   }
 }
